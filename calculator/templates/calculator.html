@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+ <body>
+   <h1>Calculator</h1>
+   <form action="/" method= "post">
+    <input type="number" name="num1" placeholder="Number 1">
+    <select name="operator">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="/">/</option>
+    <option value="*">*</option>
+</select>
+<input type= "number" name="num2" placeholder= Number 2">
+<input type= "submit" value= "Calculator">
+</form>
+   {% if result %}
+    <p>Result: {{result}}</p>
+   {% endif %}
+</body>
+</html>
